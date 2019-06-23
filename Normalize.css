@@ -1,0 +1,224 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Styles for body*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+  background-color: cornflowerblue;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+    opacity: .6;
+}
+ul {
+    list-style: none;
+}
+/*Style for image*/
+.hero {
+    background: url('https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80') center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    /*Grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+}
+
+.hero > * {
+    color: white;
+}
+
+.hero > h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.hero > article > p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.hero > article > a {
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
+aside {
+    grid-area: side;
+    margin-right: 0.5rem;
+}
+
+/*Character styles*/
+.characters {
+    padding: 2rem;
+}
+
+.characters > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 1rem;
+}
+
+.characters > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+}
+
+.characters > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.characters > ul > li > figure > img {
+    width: 100%;
+}
+
+.characters > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.3);
+  width: 100%;
+}
+
+.characters > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.characters > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+}
+
+.characters > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    padding: .75rem;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+  }
+
+/*Styles for Flexbox form*/
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  margin-bottom: auto;
+  padding: 8px 16px;
+  border: none;
+  background: cornflowerblue;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 5px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+li div p {
+  color: #333
+}
+

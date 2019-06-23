@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Normalize.css">
+    <title>Our Favorite Characters</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="hero">
+            <h1>Our Favorite Anime Characters</h1>
+        </section>
+        <section class="characters" id="characters">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="https://vignette.wikia.nocookie.net/fullmetal-alchemist-database/images/d/d9/EdwardElricEp06.png/revision/latest?cb=20121003110818"
+                            alt="Edward Elric">
+                        <figcaption>
+                            <h3>Edward Elric</h3>
+                        </figcaption>
+                    </figure>
+                    <p>Edward Elric is the protaganist of the show "Fullmetal Alchemist". It follows two brothers, Edward and Alphonse 
+                        Elric on their quest to find a way to restore themselves to their original bodies, and along the way they fight 
+                        evil, and uncover dark secrets about the alchemy and the world they live in.
+                    </p>
+                    <a href="EdwardElricPage.html" target="blank">Read More</a>
+                </li>
+
+                <li>
+                    <figure>
+                        <img src="https://d3ieicw58ybon5.cloudfront.net/full/u/8e42f4072f804732a790020664f712d1.jpg"
+                            alt="Saitama">
+                        <figcaption>
+                            <h3>Saitama</h3>
+                        </figcaption>
+                    </figure>
+                    <p>Saitama is the main character of the show "One Punch Man". He became the strongest man in the world through 
+                        unconventional means, and is constantly looking for a way to be challenged when fighting the strongest monsters
+                        that attack mankind.
+                    </p>
+                    <a href="Saitama.html">Read More</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="https://wallpapercave.com/wp/5Y16mKV.jpg"
+                            alt="Sailor Moon">
+                        <figcaption>
+                            <h3>Sailor Moon</h3>
+                        </figcaption>
+                    </figure>
+                    <p>Click below to learn more about Kaitlin's favorite anime character!
+                    </p>
+                    <a href="SailorMoon.html" target="blank">Read More</a>
+                </li>
+                <li>
+                    <div class="container">
+                        <p>Contact Us</p>
+                        <form>
+                            <ul class="flex-outer">
+                                <li>
+                                    <label for="first-name">First Name</label>
+                                    <input style="border: 2px solid lightgray; border-radius: 4px;" type="text"
+                                        id="first-name" placeholder="Enter your first name here">
+                                </li>
+                                <li>
+                                    <label for="last-name">Last Name</label>
+                                    <input style="border: 2px solid lightgray; border-radius: 4px;" type="text"
+                                        id="last-name" placeholder="Enter your last name here">
+                                </li>
+                                <li>
+                                    <label for="email">Email</label>
+                                    <input style="border: 2px solid lightgray; border-radius: 4px;" type="email"
+                                        id="email" placeholder="Enter your email here">
+                                </li>
+                                <li>
+                                    <label for="message">Message</label>
+                                    <textarea style="border: 2px solid lightgray; border-radius: 4px;" rows="6"
+                                        id="message" placeholder="Enter your message here"></textarea>
+                                </li>
+                                <li>
+                                    <button type="submit">Submit</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <p>Made by Kaitlin Durfee, Jon Njoroge, and CJ Wright</p>
+        <button class="submit" onclick="window.print()">Print This Page</button>
+        <p id="datetime"></p>
+    </footer>
+</body>
+<script>
+        var d = new Date();
+        document.getElementById("datetime").innerHTML = d;
+    </script>
+</html>
+
